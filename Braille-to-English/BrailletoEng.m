@@ -103,14 +103,12 @@ end
 %fprintf('Intermediate English text:\n %s',str1);
 %--------------------------------------------------------
 
-%
+%--------------------------------------------------------
 %the intermediate english text obtained is contained in str1
 %convert this intermediate text to conventional english text
 %each intermediate english text character or combination of characters
 %has a corresponding character in english text
 %convert with the help of another hash table
-%
-
 keyFinal = {'.*' , '`','6','`a','_?','`s','.0','`5','`&','"9','"<','">','.-','"6',',-','"7','.<','.>','_<','_>','_|','3',',7','2','''','1','4','_/','`<','`>','8'};
 valueFinal = {'`','~','!','@','#','$','%','^','&','*','(',')','_','+','-','=','[',']','{','}','|',':','"',';','''',',','.','/','<','>','?'};
 mapObj2 = containers.Map(keyFinal,valueFinal);
@@ -187,4 +185,5 @@ while i <= listSize(2)
      %   break;
     %end
 end
-fprintf('\n\n%s',finale);
+fprintf('\n\nConventional English text : \n%s',finale);
+%--------------------------------------------------------
